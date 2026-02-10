@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>King Stock Capital Management | KSCM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              300: '#FDE047',
+              400: '#FCE988', /* Light Shine */
+              500: '#FFD700', /* Real Gold (Bright) */
+              600: '#DAA520', /* Goldenrod (Shadow) */
+              700: '#B8860B',
+            },
+            navy: {
+              900: '#0a192f',
+              800: '#112240',
+              700: '#233554',
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'gold-gradient': 'linear-gradient(135deg, #FCE988 0%, #FFD700 50%, #DAA520 100%)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a192f;
+      color: #e6f1ff;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Utility for text gradients */
+    .text-gold-gradient {
+      background: linear-gradient(to right, #FCE988, #FFD700, #DAA520, #FFD700, #FCE988);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      animation: shine 4s linear infinite;
+    }
+
+    .text-silver-gradient {
+      background: linear-gradient(to right, #94a3b8, #e2e8f0, #ffffff, #e2e8f0, #94a3b8);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      animation: shine 6s linear infinite;
+    }
+
+    /* Button Border Shine */
+    .btn-shine-border {
+      position: relative;
+      background: linear-gradient(#0a192f, #0a192f) padding-box,
+        linear-gradient(90deg, #DAA520, #FCE988, #FFD700, #FFFFFF, #FFD700, #FCE988, #DAA520) border-box;
+      border: 2px solid transparent;
+      border-radius: 9999px;
+      background-size: 200% auto;
+      animation: shine 2s linear infinite;
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    .btn-shine-border:hover {
+      background: #FFD700;
+      color: #0a192f;
+      border-color: #FFD700;
+      animation: none;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="/KSCM2026/assets/index-iR9d8D6n.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
